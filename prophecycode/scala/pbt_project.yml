@@ -1,6 +1,6 @@
 name: ank-project
 description: User fork
-version: '0.1'
+version: ank-project/0.1-SNAPSHOT
 author: ankitapubsub@prophecy.io
 workflows:
   workflows/ank-wf:
@@ -13,6 +13,17 @@ workflows:
     datasets:
       inputs:
       - 224/datasets/ank-ds2
+      outputs: []
+    dependencies: {}
+  workflows/wf1:
+    name: wf1
+    description: null
+    author: ankitapubsub@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-03-03 11:57:28'
+    datasets:
+      inputs: []
       outputs: []
     dependencies: {}
 datasets:

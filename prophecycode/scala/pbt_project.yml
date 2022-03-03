@@ -1,0 +1,44 @@
+name: ank-project
+description: User fork
+version: '0.1'
+author: ankitapubsub@prophecy.io
+workflows:
+  workflows/ank-wf:
+    name: ank-wf
+    description: null
+    author: ankitapubsub@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-03-03 11:41:43'
+    datasets:
+      inputs:
+      - 224/datasets/ank-ds2
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/ank-DS1:
+    name: ank-DS1
+    description: ''
+    author: ankitapubsub@prophecy.io
+    createdAt: '2022-03-03 11:42:13'
+    physicalDatasets:
+      pubsubfabric:
+        fabricId: 30
+        datasetType: File
+        description: ''
+        author: ankitapubsub@prophecy.io
+        createdAt: '2022-03-03 11:42:13'
+  datasets/ank-ds2:
+    name: ank-ds2
+    description: ''
+    author: ankitapubsub@prophecy.io
+    createdAt: '2022-03-03 11:49:44'
+    physicalDatasets:
+      pubsubfabric:
+        fabricId: 30
+        datasetType: File
+        description: ''
+        author: ankitapubsub@prophecy.io
+        createdAt: '2022-03-03 11:49:44'
+schedules: {}
+libraries: []
